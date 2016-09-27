@@ -3,7 +3,7 @@ $(document).ready(function() {
 // directly copied from: https://gist.github.com/branneman/5814160
 var fn = function(arg1, arg2) {
     var str = '<p>aap ' + this.noot + ' ' + arg1 + ' ' + arg2 + '</p>';
-    document.body.innerHTML += str;
+    // document.body.innerHTML += str;
     return str;
 };
 var context = {

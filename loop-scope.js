@@ -5,8 +5,10 @@ $(document).ready(function(){
     for(var i = 0; i < 3; i++) {
         arr.push(function() {
             console.log(i);
-        });
+        }
+        );
     }
+
 
     // var arr = [];
     // var createFunction = function(v) {
@@ -30,7 +32,7 @@ $(document).ready(function(){
     // Local “free” variable that ends up within the closure
     var num = 1;
     function checkNumber() { 
-        console.log(num);
+        // console.log(num);
     }
     num++;
     return checkNumber;
