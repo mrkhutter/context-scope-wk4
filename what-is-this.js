@@ -24,8 +24,20 @@ $(document).ready(function(){
         this.age = age;
     }
 
+    Person("mark", 30, "aslfkjsdf");
+
+    var anotherPerson = new Person("stacey", 29, "helper");
+
     var person = {  
     name: "Brendan Eich",
+    hello: function(thing) {
+            console.log(this + " says hello " + thing);
+            console.log(this.name === name);
+        }
+    }
+
+    var person = {  
+    name: "Mark Hutter",
     hello: function(thing) {
             console.log(this + " says hello " + thing);
             console.log(this.name === name);
